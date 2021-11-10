@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+body {
+  padding: 0%;
+  margin: 0;
+  overflow: hidden;
+  font-family: "Nunito", sans-serif;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
