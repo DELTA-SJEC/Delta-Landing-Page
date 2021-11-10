@@ -6,15 +6,17 @@ function App() {
       <BodySection>
         <SpinImage src="https://avatars.githubusercontent.com/u/93979833?s=200&v=4" />
         <CustomHeadingFont>
-          Visual primitives for the component age.
+          Make A Difference
         </CustomHeadingFont>
         <CustomParaFont>
-          Use the best bits of ES6 and CSS to style your apps without stress 💅🏾
+        
+
+“Hard work beats talent when talent doesn't work hard,”  <CustomSpan>- Tim Notke</CustomSpan>
         </CustomParaFont>
 
         <ButtonContainer>
-          <CustomButton href="https://google.com">Hello 01</CustomButton>
-          <CustomButton href="https://google.com">Hello 01</CustomButton>
+          <CustomButton href="https://google.com">Register</CustomButton>
+          <CustomButton href="https://google.com">Email</CustomButton>
         </ButtonContainer>
 
         <CodeEditor
@@ -33,14 +35,22 @@ function App() {
 const CustomHeadingFont = styled.h1`
   color: white;
   margin: 1%;
+  font-weight:700;
   text-align: center;
 `;
 
 const CustomParaFont = styled.p`
   color: white;
   margin: 1%;
+  font-style:italic;
   text-align: center;
 `;
+
+const CustomSpan =styled.span`
+color:White;
+padding-left:10px;
+font-style:normal;
+`; 
 
 const ButtonContainer = styled.div`
   display: flex;
@@ -49,16 +59,27 @@ const ButtonContainer = styled.div`
 `;
 
 const CustomButton = styled.a`
-  display: inline-block;
-  text-decoration: none;
-  border-radius: 3px;
-  padding: 0.5rem 0;
+ 
+  margin: 10px;
+  padding: 1rem 0;
   text-align: center;
-  margin: 0.5rem 1rem;
-  width: 11rem;
-  background: transparent;
-  color: white;
-  border: 2px solid white;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing:2px;
+  width:11rem;
+  color: white;            
+  text-decoration:none;
+  border-radius: 10px;
+  display: inline-block;
+  background-size:200% auto;
+  background-image: linear-gradient(to right, #00c6ff 0%, #0072ff  51%, #00c6ff  100%);
+  
+  :hover {
+    background-position: right center; 
+    color: #fff;
+    text-decoration: none;
+    transform :scale(1.05)
+  }
 `;
 
 const BodySection = styled.div`
@@ -69,6 +90,9 @@ const BodySection = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-image: radial-gradient(circle, #232323 0%, black 100%);
+  
+
 `;
 
 const SpinImage = styled.img`
