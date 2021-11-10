@@ -15,8 +15,8 @@ function App() {
         </CustomParaFont>
 
         <ButtonContainer>
-          <CustomButton href="https://google.com">Register</CustomButton>
-          <CustomButton href="https://google.com">Email</CustomButton>
+          <CustomButton href="https://eatmyurl.ml/15FTJm">Register</CustomButton>
+          <CustomButton href="mailto:support@delta-sjec.tech">Email</CustomButton>
         </ButtonContainer>
 
         <CodeEditor
