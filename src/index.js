@@ -8,6 +8,7 @@ import TerminalX from "./components/terminal";
 const AppContainer = styled.div`
   height: 100vh;
   width: 100vw;
+  padding: 10px;
 `;
 
 ReactDOM.render(

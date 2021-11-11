@@ -35,6 +35,8 @@ const TerminalX = () => {
         }}
         descriptions={{
           "open-google": "opens google.com",
+          "open-github": "opens github.com",
+          "type-text": "type text",
           showmsg: "shows a message",
           alert: "alert",
           popup: "alert",
