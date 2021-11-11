@@ -1,32 +1,26 @@
 import styled from "styled-components";
-
+import Terminal from "./components/terminal";
 function App() {
   return (
     <>
       <BodySection>
         <SpinImage src="https://avatars.githubusercontent.com/u/93979833?s=200&v=4" />
-        <CustomHeadingFont>
-          Make A Difference
-        </CustomHeadingFont>
+        <CustomHeadingFont>Make A Difference</CustomHeadingFont>
         <CustomParaFont>
-        
-
-“Hard work beats talent when talent doesn't work hard,”  <CustomSpan>- Tim Notke</CustomSpan>
+          “Hard work beats talent when talent doesn't work hard,”
+          <CustomSpan>- Kevin Durant</CustomSpan>
         </CustomParaFont>
 
         <ButtonContainer>
-          <CustomButton href="https://eatmyurl.ml/15FTJm">Register</CustomButton>
-          <CustomButton href="mailto:support@delta-sjec.tech">Email</CustomButton>
+          <CustomButton href="https://eatmyurl.ml/15FTJm">
+            Register
+          </CustomButton>
+          <CustomButton href="mailto:support@delta-sjec.tech">
+            Email
+          </CustomButton>
         </ButtonContainer>
 
-        <CodeEditor
-          src="https://replit.com/@vigneshshettyin/MundaneFrivolousPython?lite=true"
-          scrolling="no"
-          frameborder="no"
-          allowtransparency="true"
-          allowfullscreen="true"
-          sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"
-        />
+        <Terminal />
       </BodySection>
     </>
   );
@@ -35,22 +29,22 @@ function App() {
 const CustomHeadingFont = styled.h1`
   color: white;
   margin: 1%;
-  font-weight:700;
+  font-weight: 700;
   text-align: center;
 `;
 
 const CustomParaFont = styled.p`
   color: white;
   margin: 1%;
-  font-style:italic;
+  font-style: italic;
   text-align: center;
 `;
 
-const CustomSpan =styled.span`
-color:White;
-padding-left:10px;
-font-style:normal;
-`; 
+const CustomSpan = styled.span`
+  color: White;
+  padding-left: 10px;
+  font-style: normal;
+`;
 
 const ButtonContainer = styled.div`
   display: flex;
@@ -59,26 +53,30 @@ const ButtonContainer = styled.div`
 `;
 
 const CustomButton = styled.a`
- 
   margin: 10px;
   padding: 1rem 0;
   text-align: center;
   text-transform: uppercase;
   transition: 0.5s;
-  letter-spacing:2px;
-  width:11rem;
-  color: white;            
-  text-decoration:none;
+  letter-spacing: 2px;
+  width: 11rem;
+  color: white;
+  text-decoration: none;
   border-radius: 10px;
   display: inline-block;
-  background-size:200% auto;
-  background-image: linear-gradient(to right, #00c6ff 0%, #0072ff  51%, #00c6ff  100%);
-  
+  background-size: 200% auto;
+  background-image: linear-gradient(
+    to right,
+    #00c6ff 0%,
+    #0072ff 51%,
+    #00c6ff 100%
+  );
+
   :hover {
-    background-position: right center; 
+    background-position: right center;
     color: #fff;
     text-decoration: none;
-    transform :scale(1.05)
+    transform: scale(1.05);
   }
 `;
 
@@ -91,8 +89,8 @@ const BodySection = styled.div`
   align-items: center;
   flex-direction: column;
   background-image: radial-gradient(circle, #232323 0%, black 100%);
-  
-
+  background-color: #8ec5fc;
+  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
 `;
 
 const SpinImage = styled.img`
@@ -109,7 +107,7 @@ const SpinImage = styled.img`
 
 const CodeEditor = styled.iframe`
   height: 40vh;
-  width: 40vw;
+  width: 50vw;
   @media (max-width: 768px) {
     width: 90vw;
   }
