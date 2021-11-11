@@ -87,7 +87,7 @@ const BodySection = styled.div`
   flex-direction: column;
   background-image: radial-gradient(circle, #232323 0%, black 100%);
   background-color: #8ec5fc;
-  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+ 
 `;
 
 const SpinImage = styled.img`
