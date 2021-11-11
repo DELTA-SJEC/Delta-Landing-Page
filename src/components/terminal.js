@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Terminal from "terminal-in-react";
 const TerminalX = () => {
   return (

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Terminal from "./components/terminal";
 function App() {
   return (
     <>
@@ -19,8 +18,6 @@ function App() {
             Email
           </CustomButton>
         </ButtonContainer>
-
-        <Terminal />
       </BodySection>
     </>
   );
