@@ -1,9 +1,13 @@
 import styled from "styled-components";
+
 function App() {
   return (
-    <>
+    <><CustomNav><SpinImage src="https://cdn.discordapp.com/attachments/801054654174855169/908388422752813118/Group_7.png" /></CustomNav>
+    
       <BodySection>
-        <SpinImage src="https://avatars.githubusercontent.com/u/93979833?s=200&v=4" />
+        <BodyLeft>
+        <CustomDeltaBack>DELTA</CustomDeltaBack>
+        <CustomDelta>DELTA</CustomDelta>
         <CustomHeadingFont>Make A Difference</CustomHeadingFont>
         <CustomParaFont>
           “Hard work beats talent when talent doesn't work hard,”
@@ -18,35 +22,96 @@ function App() {
             Email
           </CustomButton>
         </ButtonContainer>
+        </BodyLeft>
+        <BodyRight className="rightcont">
+<CustomImg src="./coder.svg"></CustomImg>
+        </BodyRight>
+        
+    
       </BodySection>
     </>
   );
 }
+const CustomImg=styled.img`
+width:35vw;
+align-self:center;
+
+@media (max-width: 1280px) {
+  width: 60vw;
+}
+`
+
+;
+const CustomNav=styled.div`
+width: 100vw;
+height : 10vh;
+`;
+const BodyLeft= styled.div`
+display:flex;
+flex-basis:60vw;
+flex-direction: column; 
+@media (max-width: 1280px) {
+  width: 100vw;
+  flex-basis:100vw;
+}
+
+`;
+const BodyRight= styled.div`
+display:flex;
+flex-basis:40vw;
+justify-content:top;
+align-items:top;
+height:90vh;
+@media (max-width: 1280px) {
+ flex-basis: 100vw;
+ height:auto;
+ margin-top:10vh;
+}
+
+`;
+const CustomDeltaBack= styled.h1`
+font-size:13rem;
+font-family:'Poppins','Open sans';
+margin:0;
+color:#f1f1f1;
+position:relative;
+text-align:center;
+`;
+const CustomDelta = styled.h1`
+font-size:7rem;
+font-family:'Poppins','Open sans';
+margin:0;
+text-align:center;
+position:absolute;
+left:7vw;
+top:25vh;
+letter-spacing:0.41rem;
+`;
+
 
 const CustomHeadingFont = styled.h1`
-  color: white;
   margin: 1%;
   font-weight: 700;
   text-align: center;
+  
 `;
 
 const CustomParaFont = styled.p`
-  color: white;
   margin: 1%;
   font-style: italic;
   text-align: center;
 `;
 
 const CustomSpan = styled.span`
-  color: White;
   padding-left: 10px;
   font-style: normal;
 `;
 
 const ButtonContainer = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  margin:5vh 0;
 `;
 
 const CustomButton = styled.a`
@@ -64,9 +129,9 @@ const CustomButton = styled.a`
   background-size: 200% auto;
   background-image: linear-gradient(
     to right,
-    #00c6ff 0%,
-    #0072ff 51%,
-    #00c6ff 100%
+    #7F70DD 0%,
+    
+    #367CFF 100%
   );
 
   :hover {
@@ -82,32 +147,26 @@ const BodySection = styled.div`
   height: 100vh;
   background-color: black;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-image: radial-gradient(circle, #232323 0%, black 100%);
-  background-color: #8ec5fc;
+  flex-direction: row;
+  background-color: #fff;
+  flex-wrap: wrap;
  
 `;
 
 const SpinImage = styled.img`
   display: flex;
-  height: 20vh;
-  width: 10vw;
+  height: 10vh;
+  width: 6vw;
+  margin:1% 2%;
+  position:absolute;
   @media (max-width: 768px) {
-    width: 30vw;
+    width: 17vw;
   }
   :hover {
     animation: spin 5s linear infinite;
   }
 `;
 
-const CodeEditor = styled.iframe`
-  height: 40vh;
-  width: 50vw;
-  @media (max-width: 768px) {
-    width: 90vw;
-  }
-`;
+
 
 export default App;

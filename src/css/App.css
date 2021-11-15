@@ -15,3 +15,10 @@ body {
     transform: rotate(360deg);
   }
 }
+.rightcont{
+  justify-items: center;
+  align-items: center;
+  justify-self: center;
+  justify-content: center;
+  
+}
