@@ -40,6 +40,9 @@ const CustomImg = styled.img`
   @media (max-width: 1280px) {
     width: 60vw;
   }
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const CustomNav = styled.div`
