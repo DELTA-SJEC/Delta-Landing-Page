@@ -53,6 +53,7 @@ const BodyLeft = styled.div`
   display: flex;
   flex-basis: 60vw;
   flex-direction: column;
+  overflow: hidden;
   @media (max-width: 1280px) {
     width: 100vw;
     flex-basis: 100vw;
@@ -63,6 +64,7 @@ const BodyRight = styled.div`
   flex-basis: 40vw;
   justify-content: top;
   align-items: top;
+  overflow: hidden;
   height: 90vh;
   @media (max-width: 1280px) {
     flex-basis: 100vw;
@@ -138,12 +140,13 @@ const CustomButton = styled.a`
 
 const BodySection = styled.div`
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   background-color: black;
   display: flex;
   flex-direction: row;
   background-color: #fff;
   flex-wrap: wrap;
+  overflow: hidden;
 `;
 
 const SpinImage = styled.img`
