@@ -79,6 +79,9 @@ const CustomDeltaBack = styled.h1`
   color: #f1f1f1;
   position: relative;
   text-align: center;
+  @media (max-width: 768px) {
+    font-size: 11rem;
+  }
 `;
 const CustomDelta = styled.h1`
   font-size: 7rem;
@@ -89,6 +92,9 @@ const CustomDelta = styled.h1`
   left: 7vw;
   top: 25vh;
   letter-spacing: 0.41rem;
+  @media (max-width: 768px) {
+    font-size: 6rem;
+  }
 `;
 
 const CustomHeadingFont = styled.h1`
